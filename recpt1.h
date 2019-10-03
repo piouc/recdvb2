@@ -12,12 +12,12 @@
 #define TRUE                1
 #define FALSE               0
 
-typedef struct _BUFSZ {
+typedef struct {
     int size;
     u_char buffer[MAX_READ_SIZE];
 } BUFSZ;
 
-typedef struct _QUEUE_T {
+typedef struct {
     unsigned int in;        // 次に入れるインデックス
     unsigned int out;        // 次に出すインデックス
     unsigned int size;        // キューのサイズ
